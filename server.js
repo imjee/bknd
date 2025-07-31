@@ -5,7 +5,7 @@ const path = require('path');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const DB_FILE = path.join(__dirname, 'barang.json');
 const SECRET = process.env.JWT_SECRET || "drcsupersecret";
 const ADMIN = { username: "admin", password: "drc123" };
